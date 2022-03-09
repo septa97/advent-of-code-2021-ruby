@@ -33,7 +33,7 @@ def part2(lines)
         aim -= arg
     else # we're sure that it's "forward"
         horizontal += arg
-        depth += (aim * arg)
+        depth += aim * arg
     end
   end
 
