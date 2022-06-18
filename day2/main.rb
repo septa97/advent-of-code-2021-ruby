@@ -8,11 +8,11 @@ def part1(lines)
     ins, arg = line.split
     arg = arg.to_i
     if ins == 'forward'
-        horizontal += arg
+      horizontal += arg
     elsif ins == 'down'
-        depth += arg
+      depth += arg
     else # we're sure that it's "up"
-        depth -= arg
+      depth -= arg
     end
   end
 
@@ -28,12 +28,12 @@ def part2(lines)
     ins, arg = line.split
     arg = arg.to_i
     if ins == 'down'
-        aim += arg
+      aim += arg
     elsif ins == 'up'
-        aim -= arg
+      aim -= arg
     else # we're sure that it's "forward"
-        horizontal += arg
-        depth += aim * arg
+      horizontal += arg
+      depth += aim * arg
     end
   end
 
